@@ -6,11 +6,9 @@ Documentació de les comandes utilitzades per configurar el servidor del project
 
 ## Contingut
 
-- Configuració de Debian
-- Instal·lació i administració de K3s
-- Emmagatzematge persistent
-- AdGuard Home
-- Jellyfin
+- [Comandes](./COMANDES.md): configuració inicial de Debian, zRAM, xarxa, seguretat, K3s, K9s, namespaces, emmagatzematge, diagnòstic DNS i desplegament d'AdGuard Home
+- Manifests Kubernetes a [`manifests/`](./manifests/)
+- Manifest de Jellyfin: [`manifests/jellyfin-deployment.yaml`](./manifests/jellyfin-deployment.yaml)
 
 ## Seguretat
 
@@ -18,4 +16,7 @@ No s'hi han d'incloure contrasenyes, tokens, claus, adreces IP privades ni altre
 
 ## Estat
 
-Les comandes s'afegiran després de confirmar quines van funcionar.
+La configuració inicial de Debian, zRAM, xarxa, seguretat, K3s, K9s, namespaces, carpetes
+persistents, diagnòstic del port DNS, AdGuard Home i Jellyfin ja està documentada. Els manifests
+disponibles són a [`manifests/`](./manifests/). AdGuard Home està configurat per servir la
+interfície web al port `30080`.
